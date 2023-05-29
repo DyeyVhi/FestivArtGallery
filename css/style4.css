@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Lancea';
+  src: url(fonts/lancea/Lancea.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Bagnard';
+  src: url(fonts/bagnard/bagnard/Bagnard.otf) format("opentype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  background: #191919;
+
+}
+
+
+.menu {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 90%;
+  left: 10%;
+  z-index: 1000;
+}
+
+.menu li a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: x-large;
+  font-family: "Lancea", sans-serif;
+}
+
+.about_us {
+  color: white;
+}
+
+
+.about_us header {
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  font-family: "Lancea", sans-serif;
+  text-transform: uppercase;  
+}
+
+
+/*Content*/
+.text h1{
+  position: absolute;
+  top: 15%;
+  left: 42%;
+  font-family: 'Bagnard';
+  max-width: 550px;
+  font-size: 20px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+}
+
+.link1 {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  left: 43%;
+  z-index: 1;
+}
+
+
+.link2 {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 32%;
+  left: 34%;
+  z-index: 1;
+}
+
+.link3 {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 58%;
+  left: 29%;
+  z-index: 1;
+}
+
+
+.link4 {
+  position: fixed;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  left: 20%;
+  z-index: 1;
+}
+
+.fb {
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s ease-out;
+}
+
+.fb:hover {
+  color: white;
+}
+
+.twi {
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s ease-out;
+  margin: 0;
+}
+
+.twi:hover {
+  color: white;
+}
+
+
+.insta {
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s ease-out;
+  margin: 0;
+}
+
+.insta:hover {
+  color: white;
+}
+
+
+.email {
+  text-decoration: none;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  transition: 0.5s ease-out;
+  margin: 0;
+}
+
+.email:hover {
+  color: white;
+}
+
+
+section #eyes {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: transparent;
+}
+
+.eye {
+  width: 109px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  inset: 0 0 50px #626262;
+}
+
+.pupil {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid #616161;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 40%);
+}

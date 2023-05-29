@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Lancea';
+    src: url(fonts/lancea/Lancea.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Bagnard';
+    src: url(fonts/bagnard/bagnard/Bagnard.otf) format("opentype");
+}
+
+*{
+  font-style: 'Bagnard';
+}
+body {
+  background: #191919;
+  
+}
+
+/*overlays for effects!!!!!*/
+/*
+.kad {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 65px rgba(13, 141, 86, 0.7);
+  overflow: hidden;
+}
+
+
+.kad2 {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 165%;
+  left: 50%;
+  box-shadow: 0 0 65px rgba(229, 74, 154, 0.7);
+  overflow: hidden;
+}
+*/
+
+
+
+/*CURSOR*/
+.cursor{
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  transition: 0.1s;
+  z-index: 9999;
+}
+h1:hover ~ .cursor{
+  transform: scale(6)
+}
+
+h2:hover ~ .cursor{
+  transform: scale(6)
+}
+
+/*Reveal scroll*/
+.reveal {
+  opacity: 0;
+  transition: all 1.2s ease-out;
+  transform: translateY(50px);
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*pages*/
+
+
+.menu {
+    position: fixed;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 90%;
+    left: 10%;
+    z-index: 1000;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    margin-right: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: "Lancea", sans-serif;
+  }
+  
+  
+.page3 {
+    color: white;
+}
+  
+  
+.page3 header {
+    position: fixed;
+    top: 0;
+    left: 0;  
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    font-family: "Lancea", sans-serif;
+    text-transform: uppercase;  
+}
+
+.container{
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  left: 0;
+  transform: translateX(95%);
+  z-index: 0;
+  
+}
+
+.layer img {
+  width: 80%;
+  z-index: 0;
+}
+
+.text h1 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  text-transform: uppercase;
+  font-family: 'Bagnard';
+  max-width: 550px;
+  font-size: 55px;
+  z-index: 3;
+  color: white;
+}
+
+.text h2 {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  text-transform: uppercase;
+  font-family: 'Bagnard';
+  max-width: 1000px;
+  font-size: xx-large;
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  font-size: 100px;
+  z-index: 3;
+  
+}
+
+.two {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.text2 h1 {
+  position: absolute;
+  top: 125%;
+  right: 10%;
+  text-transform: uppercase;
+  font-family: 'Bagnard';
+  max-width: 550px;
+  font-size: 110px;
+  z-index: 3;
+  color: transparent;
+  text-align: right;
+  -webkit-text-stroke-color: pink;
+  -webkit-text-stroke-width: 1px;
+}
+
+
+.text2 h2 {
+  position: absolute;
+  top: 185%;
+  right: 10%;
+ 
+  font-family: 'Bagnard';
+  max-width: 550px;
+  font-size: 20px;
+  z-index: 3;
+  color: white;
+  text-align: right;
+}
+
+.container2 {
+  width: 60%;
+  height: 90vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  left: 0;
+  transform: translate(-30%);
+  z-index: 0;
+}
+
+
+.scene2 img {
+  width: 80%;
+  z-index: 0;
+  box-shadow: pink;
+}
+
+
+/*      SWIPE INFO CARDS       */
+
+.featured {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 280%;
+  left: 20%;
+  box-shadow: 0 35px 65px rgba(6, 34, 70, 1);
+  overflow: hidden;
+  display: flex;
+}
+.card img {
+  width: 158%;
+  transform: translate(-25%);
+  transition: 0.5s;
+}
+h3 {
+  background-color: #5ca3ff;
+  width: 60%;
+  position: absolute;
+  bottom: 80px;
+  right: -65%;
+  padding: 10px 0;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  transform: skew(-5deg);
+  transition: 0.3s;
+}
+h5 {
+  background-color: #ffffff;
+  width: 80%;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  right: -85%;
+  bottom: 37px;
+  transform: skew(-5deg);
+  transition: 0.3s;
+}
+.card:hover h3,
+.card:hover h5 {
+  right: -2%;
+}
+.card:hover img {
+  transform: scale(1.15);
+  filter: contrast(120%);
+}

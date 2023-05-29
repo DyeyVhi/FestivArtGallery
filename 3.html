@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FestivArt Gallery</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="script3.js"></script>
+    
+</head>
+<body>
+    <section class="LandingPage">
+        <div class="page3">
+            <header><h1 class="logo">
+                FestivArt Gallery
+            </h1></header>
+
+            <!--<div class="text1">
+                <h2>Art Hub!</h2>
+            </div>-->
+
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="1.html">1</a></li>
+                <li><a href="2.html">2</a></li>
+                <li><a href="3.html"> 3</a></li>
+                <li><a href="about us.html">Contact</a></li>
+            </div>
+
+        </div>
+        <div class="kad"></div>
+        <div class="text">
+            <h1 class="reveal">Artworks from traditional to digital, even </h1>
+            <h2 class="reveal">3D models.</h2>
+            <div class="cursor"></div>
+        </div>
+        <div class="container">
+            <ul id="scene">
+                <li class="layer" data-depth="-0.5">
+                    <img src="parallax/1.png" alt="image">
+                </li>
+                <li class="layer" data-depth="0.05">
+                    <img src="parallax/2.png" alt="image">
+                </li>
+                <li class="layer" data-depth="-0.3">
+                    <img src="parallax/3.png" alt="image">
+                </li>
+                              
+            </ul>
+            <script>
+                var scene = document.getElementById('scene');
+                var parallax = new Parallax(scene);
+            </script>
+        </div>
+    </section>
+    <section class="two">
+        <div class="kad2"></div>
+        <div class="text2">
+            <h1 class="reveal">Made by local artist</h1>
+            <h2 class="reveal">Art by Ren</h2>
+            <div class="cursor"></div>
+           
+        </div>
+        <div class="container2">
+            <ul id="scene2">
+                <li class="layer" data-depth="-0.2">
+                    <img src="parallax2/4.png"  alt="image1">
+                </li>
+                <li class="layer" data-depth="0.2">
+                    <img src="parallax2/5.png" alt="image2">
+                </li>
+                <li class="layer" data-depth="-0.9">
+                    <img src="parallax2/6.png" alt="image2">
+                </li>          
+            </ul>
+            <script>
+                var scene = document.getElementById('scene2');
+                var parallax = new Parallax(scene);
+            </script>
+        </div>
+    </section>
+    <section class="featured">     
+        <div class="card">
+            <img src="prof/Cuver.png" />
+            <h5>Market Research Analyst</h5>
+            <h3>Stephen Brown</h3>
+          </div>
+    </section>
+    
+    <!-- Add this code before the closing </body> tag -->
+        <script src="path/to/parallax.min.js"></script>
+        <script>
+        // Initialize parallax effect for the first section
+        var scene1 = document.getElementById('scene');
+        var parallax1 = new Parallax(scene1);
+
+        // Initialize parallax effect for the second section
+        var scene2 = document.getElementById('scene2');
+        var parallax2 = new Parallax(scene2);
+        </script>
+     <script>
+        const cursor = document.querySelector('.cursor');
+        const elements = document.querySelectorAll('.LandingPage, .two');
+       
+
+        document.addEventListener('mousemove', (e) => {
+        const scrollX = window.scrollX || window.pageXOffset;
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        cursor.style.left = e.pageX - scrollX + 'px';
+        cursor.style.top = e.pageY - scrollY + 'px';
+        });
+
+        sections.forEach((section) => {
+        section.addEventListener('mousemove', (e) => {
+            const scrollX = window.scrollX || window.pageXOffset;
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            cursor.style.left = e.pageX - scrollX + 'px';
+            cursor.style.top = e.pageY - scrollY + 'px';
+        });
+        });
+
+        headings.forEach((heading) => {
+        heading.addEventListener('mousemove', (e) => {
+            const scrollX = window.scrollX || window.pageXOffset;
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            cursor.style.left = e.pageX - scrollX + 'px';
+            cursor.style.top = e.pageY - scrollY + 'px';
+        });
+        });
+
+    </script>
+
+    
+</body>
+</html>

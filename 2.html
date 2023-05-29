@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FestivArt Gallery</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="script2.js"></script>
+    
+</head>
+<body>
+  <div class="container">
+    <div class="overlay"></div>
+        <div class="homepage">
+            <header><h1 class="logo">
+              FestivArt Gallery
+            </h1></header>
+        </div>
+        <div class="texty">
+          <h2>Art Hub!</h2>
+          <h2>Art Hub!</h2>
+          <h2>Art Hub!</h2>
+        </div>
+        
+      <div class="slide-container">
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+        <span class="slider-span" id="slider-span5"></span>
+        <span class="slider-span" id="slider-span6"></span>
+        <span class="slider-span" id="slider-span7"></span>
+
+        <div class="image-slider">
+            <div class="slides-div" id="slide-1">
+                <img src="frames/KC(13).png" alt="" class="img" id="img1">
+                <a href="#slider-span1" class="button" id="button-1"></a>
+                
+            </div>
+            <div class="slides-div" id="slide-2">
+                <img src="frames/KC(9).png" alt="" class="img" id="img2">
+                <a href="#slider-span2" class="button" id="button-2"></a>
+            </div>
+            <div class="slides-div" id="slide-3">
+                <img src="frames/KC(10).png" alt="" class="img" id="img3">
+                <a href="#slider-span3" class="button" id="button-3"></a>
+            </div>
+            <div class="slides-div" id="slide-4">
+                <img src="frames/KC(12).png" alt="" class="img" id="img4">
+                <a href="#slider-span4" class="button" id="button-4"></a>
+            </div>
+            <div class="slides-div" id="slide-5">
+                <img src="frames/KC(14).png" alt="" class="img" id="img5">
+                <a href="#slider-span5" class="button" id="button-5"></a>
+            </div>
+            <div class="slides-div" id="slide-6">
+                <img src="frames/KC(5).png" alt="" class="img" id="img6">
+                <a href="#slider-span6" class="button" id="button-6"></a>
+            </div>
+            <div class="slides-div" id="slide-7">
+                <img src="frames/KC(11).png" alt="" class="img" id="img7">
+                <a href="#slider-span7" class="button" id="button-7"></a>
+            </div>
+
+        </div>
+        <div class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="1.html">1</a></li>
+          <li><a href="2.html">2</a></li>
+          <li><a href="3.html"> 3</a></li>
+          <li><a href="about us.html">Contact</a></li>
+      </div>
+  </div>
+  <div class="container2">
+    <div class="text">
+        <h1 class="reveal">FestivArt's dedication is to provide a space to recognize and appreciate student artworks from all over the Philippines. 
+
+            As fellow students, we acknowledge the lack of support for young local artists. Therefore, we aim to instigate a movement that shows how art made by these artists is significant in promoting local culture and artistry. We welcome and feature artists that engage with all kinds of art forms and take pride in creating beyond the restrictions of traditional arts. 
+            </h1>
+        <h3></h3>
+       
+        <div class="cursor"></div>
+        <script>
+           // const cursor = document.querySelector('.cursor');
+           // document.addEventListener('mousemove', (e) => {
+           // cursor.style.left = e.pageX + 'px';
+          //  cursor.style.top = e.pageY + 'px';
+           // });
+
+            const cursor = document.querySelector('.cursor');
+            const sections = document.querySelectorAll('section');
+
+            document.addEventListener('mousemove', (e) => {
+            const scrollX = window.scrollX || window.pageXOffset;
+            const scrollY = window.scrollY || window.pageYOffset;
+
+            cursor.style.left = e.pageX - scrollX + 'px';
+            cursor.style.top = e.pageY - scrollY + 'px';
+            });
+
+            sections.forEach((section) => {
+            section.addEventListener('mousemove', (e) => {
+                const scrollX = window.scrollX || window.pageXOffset;
+                const scrollY = window.scrollY || window.pageYOffset;
+
+                cursor.style.left = e.pageX - scrollX + 'px';
+                cursor.style.top = e.pageY - scrollY + 'px';
+            });
+            });
+
+        </script>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
